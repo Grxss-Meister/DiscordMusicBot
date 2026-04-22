@@ -17,7 +17,6 @@ A simple Discord bot that plays music from YouTube directly in your voice channe
 **1. Clone the repository**
 ```bash
 git clone https://github.com/Grxss-Meister/DiscordMusicBot.git
-cd DiscordMusicBot
 ```
 
 **2. Install dependencies**
