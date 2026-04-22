@@ -33,15 +33,11 @@ YOUR_DISCORD_BOT_TOKEN_HERE
 
 **4. Run the bot**
 
-**Option A – VS Code (easy):**
-Open `src/main.py` in VS Code and click the ▶️ Run button in the top right corner.
-
-**Option B – Terminal:**
+**Option VS Code (easy):**
 ```bash
 cd src
 python main.py
 ```
-
 ---
 
 ## 🤖 How to get a Bot Token
