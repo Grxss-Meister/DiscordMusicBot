@@ -21,7 +21,7 @@ git clone https://github.com/Grxss-Meister/DiscordMusicBot.git
 
 **2. Install dependencies**
 ```bash
-pip install discord.py yt-dlp python-dotenv PyNaCl discord.py[voice] urllib3
+pip install discord.py yt-dlp PyNaCl discord.py[voice] urllib3
 ```
 
 **3. Add your Bot Token**
