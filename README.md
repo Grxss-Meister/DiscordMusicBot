@@ -62,7 +62,7 @@ DiscordMusicBot/
     ├── main.py
     ├── music_cog.py
     ├── help_cog.py
-    └── token.txt        ← create this yourself (not included!)
+    └── token.txt        ← edit this yourself (not included!)
 ```
 
 ---
