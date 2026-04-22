@@ -38,6 +38,7 @@ Open `src/main.py` in VS Code and click the ▶️ Run button in the top right c
 
 **Option B – Terminal:**
 ```bash
+cd src
 python main.py
 ```
 
