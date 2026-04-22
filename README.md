@@ -48,7 +48,8 @@ python main.py
 1. Go to [discord.com/developers/applications](https://discord.com/developers/applications)
 2. Click **New Application** and give it a name
 3. Go to **Bot** → **Reset Token** and copy your token
-4. Paste it into `src/token.txt`
+4. In **Bot** → enable **Message Content Intent**
+5. Paste it into `src/token.txt`
 
 ---
 
