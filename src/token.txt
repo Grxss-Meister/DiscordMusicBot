@@ -1,1 +1,1 @@
-Delte this message and put your own Discord token here.
+YOUR_DISCORD_BOT_TOKEN_HERE
