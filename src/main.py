@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 from music_cog import music_cog
 from help_cog import help_cog
+import os
 
 intents = discord.Intents.default()
 intents.message_content = True  
@@ -19,7 +20,8 @@ async def on_ready():
     print(f'{bot.user} ist jetzt online!')
 
 
-with open("token.txt", "r") as file:
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+with open(os.path.join(BASE_DIR, "token.txt"), "r") as file:
     token = file.readlines()[0].strip()
 
 import asyncio
