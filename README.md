@@ -17,7 +17,6 @@ A simple Discord bot that plays music from YouTube directly in your voice channe
 **1. Clone the repository**
 ```bash
 git clone https://github.com/Grxss-Meister/DiscordMusicBot.git
-cd DiscordMusicBot
 ```
 
 **2. Install dependencies**
@@ -36,13 +35,12 @@ YOUR_DISCORD_BOT_TOKEN_HERE
 
 **Option A – VS Code (easy):**
 Open `src/main.py` in VS Code and click the ▶️ Run button in the top right corner.
-
+ 
 **Option B – Terminal:**
 ```bash
 cd src
 python main.py
 ```
-
 ---
 
 ## 🤖 How to get a Bot Token
@@ -51,6 +49,9 @@ python main.py
 2. Click **New Application** and give it a name
 3. Go to **Bot** → **Reset Token** and copy your token
 4. Paste it into `src/token.txt`
+5. In **Bot** → enable **Message Content Intent**
+6. Also in Bot enable Admin in **Bot**
+7. In **OAuth2** enable **bot** and **administrator**
 
 ---
 
