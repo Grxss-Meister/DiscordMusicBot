@@ -3,7 +3,6 @@ from discord.ext import commands
 from music_cog import music_cog
 from help_cog import help_cog
 
-# 1. Intents definieren (WICHTIG!)
 intents = discord.Intents.default()
 intents.message_content = True  
          
