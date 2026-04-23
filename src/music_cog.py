@@ -364,7 +364,7 @@ class music_cog(commands.Cog):
     async def queue(self, ctx):
         id = int(ctx.guild.id)
         returnValue = ""
-        if self.music_queue[id] == []:
+        if self.music_queue[id] == [] or self.queue_index[id] >= len(self.music_queue[id]):
             await ctx.send("There are no songs in the queue.")
             return
         
