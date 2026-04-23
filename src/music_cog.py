@@ -108,20 +108,25 @@ class music_cog(commands.Cog):
             await self.vc[id].move_to(channel)  
             
     def get_YT_title(self, videoID):
-        params = {
-    "format": "json", 
-    "url": "https://www.youtube.com/watch?v=%s" % videoID}
-        url = "https://www.youtube.com/oembed"
-        queryString = parse.urlencode(params)
-        url = url + "?" +  queryString
-        with request.urlopen(url) as response:
-            responseText = response.read()
-            data  = json.loads(responseText.decode())
-            return data["title"]
+        try:
+            params = {"format": "json", "url": "https://www.youtube.com/watch?v=%s" % videoID}
+            url = "https://www.youtube.com/oembed?" + parse.urlencode(params)
+            with request.urlopen(url) as response:
+                data = json.loads(response.read().decode())
+                return data["title"]
+        except:
+            try:
+                with YoutubeDL({'quiet': True}) as ydl:
+                    info = ydl.extract_info(
+                    "https://www.youtube.com/watch?v=" + videoID,
+                    download=False)
+                    return info.get('title', 'Unknown Title')
+            except:
+                return "Unknown Title"
     
     def search_YT(self, search):
         queryString = parse.urlencode({"search_query": search})
-        htmContent = request.urlopen("http://www.youtube.com/results?" + queryString)
+        htmContent = request.urlopen("https://www.youtube.com/results?" + queryString)
         searchResults = re.findall(r'\/watch\?v=(.{11})', htmContent.read().decode())
         searchResults = list(dict.fromkeys(searchResults))
         return searchResults[0:10]
