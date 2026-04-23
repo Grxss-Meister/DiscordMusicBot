@@ -379,9 +379,9 @@ class music_cog(commands.Cog):
                 returnIndex = "Next"
             returnValue += f"{returnIndex} - [{self.music_queue[id][i][0]['title']}]({self.music_queue[id][i][0]['link']})\n"
             
-            if returnValue == "":
-                await ctx.send("There are no songs in the queue.")
-                return 
+        if returnValue == "":
+            await ctx.send("There are no songs in the queue.")
+            return 
             
         queue = discord.Embed(
             title = "Current queue",
