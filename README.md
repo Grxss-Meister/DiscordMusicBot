@@ -43,7 +43,7 @@ python main.py
 ```
 ---
 
-## 🤖 How to get a Bot Token
+## 🤖 How to get a Bot 
 
 1. Go to [discord.com/developers/applications](https://discord.com/developers/applications)
 2. Click **New Application** and give it a name
@@ -52,6 +52,7 @@ python main.py
 5. In **Bot** → enable **Message Content Intent**
 6. Also in Bot enable Admin in **Bot**
 7. In **OAuth2** enable **bot** and **administrator**
+8. Copy the link from **OAuth2** to invite the Bot to your server
 
 ---
 
